@@ -3,58 +3,132 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: white;
 }
-.width {
-  width: 80%;
+.container-85 {
+  width: 85%;
+  height: 100%;
   margin: auto;
+}
+.container-70 {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+}
+.container-50 {
+  width: 50%;
+  height: 100%;
 }
 .clearfix {
   content: "";
   display: table;
   clear: both;
 }
+.list-inline {
+  height: 100%;
+  list-style: none;
+}
+.list-inline li {
+  height: 100%;
+  line-height: 79px;
+  display: inline-block;
+  padding: 0 10px;
+}
 /* /GENERAL */
 
 /* HEADER */
 .header-top {
-  height: 50px;
-  background-color: orange;
+  height: 80px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid black;
 }
-#first-ul li {
-  float:left;
-  display: inline-block;
+.header-top-left {
+  float: left;
 }
-#second-ul li {
+.header-top-right {
   float: right;
-  display: inline-block;
 }
-.language , .navbar {
+
+.navbar {
+  height: 80px;
+  background-color: #FFFFFF;
+}
+.nav-left {
+  height: 100%;
+  float: left;
+  line-height: 80px;
+}
+.nav-right {
+  height: 100%;
+  float: right;
+}
+#logo {
+  width: 100px;
+  vertical-align: middle;
+}
+
+.header-bottom {
+  height: 525px;
+  position: relative;
+  background-color: lightgreen;
+}
+.header-bottom img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
   width: 100%;
 }
-.nav {
-  display: inline-block;
-  border-top: 1px solid black;
-}
-.logo {
-  float: left;
-    font-size: 10px;
-}
-.selection ul li {
-  float: right;
-  display: inline-block;
-}
-.header-bottom {
-  height: 500px;
-  background-color: lightblue;
+.over-img {
+  position: absolute;
+  z-index: 1;
 }
 /* /HEADER */
 
 /* MAIN */
-.main-top {
-  height: 350px;
-  background-color: yellow;
+/* top */
+.main-top div{
+  border: 1px solid black
 }
+
+.section-three , .section-four , .section-five {
+  float: left;
+  width: 33.33%
+}
+.section-one {
+  text-align: center;
+}
+.section-one img {
+  display: inline-block;
+  width: 100px;
+}
+.section-two img{
+  width: 100px;
+  display: inline-block;
+}
+.section-two a {
+  display: inline-block;
+}
+.two-left {
+  float: left;
+  width: 20%
+}
+.two-right{
+  float: right;
+  width: 80%
+}
+.two-right  li{
+  padding: 0;
+  height: 100%;
+  display: inline-block;
+}
+
+.top img{
+  width: 100px;
+  display: inline-block;
+}
+sec
+
+/* /top */
 .main-middle {
   height: 150px;
   background-color: blue;
