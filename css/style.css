@@ -92,7 +92,7 @@
 
 .section-three , .section-four , .section-five {
   float: left;
-  width: 33.33%
+  width: 33.33%;
 }
 .section-one {
   text-align: center;
@@ -126,9 +126,9 @@
   width: 100px;
   display: inline-block;
 }
-sec
 
 /* /top */
+
 .main-middle {
   height: 150px;
   background-color: blue;
