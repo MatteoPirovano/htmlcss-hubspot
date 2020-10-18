@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
 }
+body{color: #425B76}
 .container-85 {
   width: 85%;
   height: 100%;
@@ -93,6 +94,10 @@
 .section-three , .section-four , .section-five {
   float: left;
   width: 33.33%;
+  text-align: center;
+}
+.section-three , .section-four , .section-five ul {
+  text-align: none;
 }
 .section-one {
   text-align: center;
@@ -102,13 +107,14 @@
   width: 100px;
 }
 .section-two img{
-  width: 100px;
+  height: 50px;
   display: inline-block;
 }
 .section-two a {
   display: inline-block;
 }
 .two-left {
+  text-align: center;
   float: left;
   width: 20%
 }
@@ -123,7 +129,7 @@
 }
 
 .top img{
-  width: 100px;
+  height: 50px;
   display: inline-block;
 }
 
