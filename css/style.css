@@ -6,8 +6,18 @@
 }
 body{
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #425B76
+}
+h1 {
+  font-size: 48px;
+}
+h1 , h2, h3 , h4 {
+  margin-bottom: 30px;
+}
+p {
+  line-height: 1.8;
+  margin-bottom:  30px;
 }
 .container-85 {
   width: 85%;
@@ -47,28 +57,40 @@ a {
   text-decoration: none;
   color: #425B76
 }
+/* a:hover {
+text-decoration: underline;
+color: #008FBC;
+} */
 i {
   padding: 5px;
 }
-/* a:hover {
-  text-decoration: underline;
-  color: #008FBC;
-} */
 /*---------- /GENERAL ----------*/
 
 /* __________BUTTON__________ */
 .button {
+  display: inline-block;
   padding: 10px;
   border-radius: 4px;
   background-color: #fd7a5b;
   color: white;
+  line-height: 16px;
 }
 .button-white {
+  display: inline-block;
   padding: 10px;
   border-radius: 4px;
   border: 1px solid #fd7a5b;
   background-color: white;
   color: #fd7a5b;
+  line-height: 16px;
+}
+.button-big {
+  display: inline-block;
+  padding: 25px;
+  border-radius: 4px;
+  background-color: #fd7a5b;
+  color: white;
+  line-height: 16px;
 }
 /* __________/BUTTON__________ */
 
@@ -118,11 +140,20 @@ i {
 }
 
 .header-bottom {
-  height: 525px;
+  height: 656px;
   position: relative;
-  background-color: lightgreen;
+  padding-top: 60px;
+}
+.header-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 .header-bottom img {
+  height: 100%;
+  display: inline-block;
   position: absolute;
   left: 0;
   top: 0;
@@ -131,7 +162,11 @@ i {
 }
 .over-img {
   position: absolute;
+  top: 0;
   z-index: 1;
+}
+.header-bottom .button-big {
+  margin-bottom: 28px;
 }
 /*---------- /HEADER ----------*/
 
@@ -201,11 +236,19 @@ i {
 /* /middle */
 
 /* bottom */
-.main-bottom-top-left , .main-bottom-bottom-left {
+.main-bottom-top-left  {
+  float: left;
+  width: 26%;
+}
+.main-bottom-top-right {
+  float: right;
+  width: 50%;
+}
+.main-bottom-bottom-left {
   float: left;
   width: 50%;
 }
-.main-bottom-top-right , .main-bottom-bottom-right {
+.main-bottom-bottom-right {
   float: right;
   width: 50%;
 }
