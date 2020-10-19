@@ -1,4 +1,4 @@
-/* GENERAL */
+/* -----------GENERAL---------- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,6 +12,11 @@ body{color: #425B76}
 }
 .container-70 {
   width: 70%;
+  height: 100%;
+  margin: auto;
+}
+.container-60 {
+  width: 60%;
   height: 100%;
   margin: auto;
 }
@@ -34,9 +39,9 @@ body{color: #425B76}
   display: inline-block;
   padding: 0 10px;
 }
-/* /GENERAL */
+/*---------- /GENERAL ----------*/
 
-/* HEADER */
+/* ----------HEADER ----------*/
 .header-top {
   height: 80px;
   background-color: #FFFFFF;
@@ -50,7 +55,6 @@ body{color: #425B76}
   height: 100%;
   float: right;
 }
-
 
 .navbar {
   height: 80px;
@@ -86,9 +90,9 @@ body{color: #425B76}
   position: absolute;
   z-index: 1;
 }
-/* /HEADER */
+/*---------- /HEADER ----------*/
 
-/* MAIN */
+/*---------- MAIN---------- */
 /* top */
 .main-top div{
   border: 1px solid black
@@ -137,11 +141,10 @@ body{color: #425B76}
   height: 70px;
   display: inline-block;
 }
-
 /* /top */
+
 /* middle */
 .main-middle {
-  /* height: 300px; */
   background-image: linear-gradient(45deg,#00a4bd,#0ed682);
   color: white;
   text-align: center;
@@ -153,13 +156,36 @@ body{color: #425B76}
   border: 1px solid white;
 }
 /* /middle */
-.main-bottom {
-  height: 150px;
-  background-color: red;
-}
-/* /MAIN  */
 
-/* FOOTER  */
+/* bottom */
+.main-bottom-top-left , .main-bottom-bottom-left {
+  float: left;
+  width: 50%;
+}
+.main-bottom-top-right , .main-bottom-bottom-right {
+  float: right;
+  width: 50%;
+}
+.companies-logo {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+.companies-logo > img {
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+.main-bottom-bottom-right {
+    padding-left: 96px;
+}
+.main-bottom-bottom-right img {
+  width: 280px;
+}
+/*/ bottom */
+/* ----------/MAIN ---------- */
+
+/* ----------FOOTER-----------  */
 footer {
   background-color: #435c77;
   color: white;
@@ -181,7 +207,7 @@ footer {
 }
 .footer-bottom {
   height: 80px;
-  width: 100%
+  width: 100%;
 }
 .footer-bottom-left {
   height: 100%;
@@ -197,6 +223,4 @@ footer {
   float: right;
   text-align: right;
 }
-
-
-/* /FOOTER  */
+/* ----------/FOOTER ---------- */
