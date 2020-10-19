@@ -41,13 +41,15 @@ body{
   height: 100%;
   line-height: 79px;
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 8px;
 }
 a {
   text-decoration: none;
   color: #425B76
 }
-
+i {
+  padding: 5px;
+}
 /* a:hover {
   text-decoration: underline;
   color: #008FBC;
