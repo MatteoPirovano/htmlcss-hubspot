@@ -4,14 +4,18 @@
   margin: 0;
   padding: 0;
 }
-body{color: #425B76}
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #425B76
+}
 .container-85 {
   width: 85%;
   height: 100%;
   margin: auto;
 }
-.container-70 {
-  width: 70%;
+.container-80 {
+  width: 80%;
   height: 100%;
   margin: auto;
 }
@@ -39,21 +43,55 @@ body{color: #425B76}
   display: inline-block;
   padding: 0 10px;
 }
+a {
+  text-decoration: none;
+  color: #425B76
+}
+
+/* a:hover {
+  text-decoration: underline;
+  color: #008FBC;
+} */
 /*---------- /GENERAL ----------*/
+
+/* __________BUTTON__________ */
+.button {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #fd7a5b;
+  color: white;
+}
+.button-white {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #fd7a5b;
+  background-color: white;
+  color: #fd7a5b;
+}
+/* __________/BUTTON__________ */
 
 /* ----------HEADER ----------*/
 .header-top {
   height: 80px;
-  background-color: #FFFFFF;
+  background-color: #F5F8FA;
   border-bottom: 1px solid black;
 }
 .header-top-left {
   height: 100%;
   float: left;
 }
+.header-top-left .list-inline li:first-child {
+  padding-left: 0;
+}
+#search-font {
+  color: #13ABC2;
+}
 .header-top-right {
   height: 100%;
   float: right;
+}
+.header-top-right .list-inline li:last-child {
+  padding-right: 0;
 }
 
 .navbar {
@@ -68,6 +106,9 @@ body{color: #425B76}
 .nav-right {
   height: 100%;
   float: right;
+}
+.nav-right .list-inline li:last-child {
+  padding-right: 0;
 }
 #logo {
   width: 100px;
