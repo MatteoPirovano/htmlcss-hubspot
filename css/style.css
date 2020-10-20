@@ -7,7 +7,7 @@
 body{
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  color: #425B76
+  color: #425B76;
 }
 .small {
   font-size: 12px;
@@ -72,12 +72,12 @@ p {
 }
 a {
   text-decoration: none;
-  color: #425B76
+  color: #425B76;
 }
-/* a:hover {
-text-decoration: underline;
-color: #008FBC;
-} */
+a:hover {
+  text-decoration: underline;
+  color: #13ABC2;
+}
 i {
   padding: 5px;
 }
@@ -109,11 +109,27 @@ i {
   color: white;
   line-height: 16px;
 }
+.button:hover , .button-big:hover {
+  background-color: rgba(255, 188, 172, 0.8);
+  text-decoration: none;
+  color: white;
+}
+.button-white:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  color: orange;
+}
 /* __________/BUTTON__________ */
 
 /* ----------HEADER ----------*/
+/* top */
 .header-top {
   height: 80px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
   background-color: #F5F8FA;
   border-bottom: 1px solid black;
 }
@@ -134,9 +150,11 @@ i {
 .header-top-right .list-inline li:last-child {
   padding-right: 0;
 }
-
+/* /top */
+/* navbar */
 .navbar {
   height: 80px;
+  margin-top: 80px;
   background-color: #FFFFFF;
 }
 .nav-left {
@@ -155,7 +173,8 @@ i {
   width: 100px;
   vertical-align: middle;
 }
-
+/* /navbar */
+/* bottom */
 .header-bottom {
   height: 656px;
   position: relative;
@@ -185,6 +204,7 @@ i {
 .header-bottom .button-big {
   margin-bottom: 28px;
 }
+/* /bottom */
 /*---------- /HEADER ----------*/
 
 /*---------- MAIN---------- */
@@ -202,7 +222,6 @@ i {
   border-radius: 6px;
   background-color: white;
 }
-
 .section-one {
   text-align: center;
   width: 85%;
@@ -220,7 +239,6 @@ i {
 .section-two img {
   margin: 30px 0;;
 }
-
 .section-two a {
   display: inline-block;
 }
@@ -256,21 +274,37 @@ i {
   color: #fd7a5b;
 }
 /* /top */
-
 /* middle */
 .main-middle {
   background-image: linear-gradient(45deg,#00a4bd,#0ed682);
   color: white;
   text-align: center;
+  padding: 60px;
+}
+.main-middle-bottom h2 {
+  font-weight: bold;
+  margin-bottom: 0;
 }
 .square-one , .square-two , .square-three , .square-four , .square-five , .square-six , .square-seven , .square-eight {
-  height: 100px;
   width: 25%;
+  padding: 15px;
   float: left;
   border: 1px solid white;
+  text-align: center;
+}
+.square-one , .square-two , .square-three , .square-four {
+  border-top: none;
+}
+.square-five , .square-six , .square-seven , .square-eight {
+  border-bottom: none;
+}
+.square-one , .square-five {
+  border-left: none;
+}
+.square-four , .square-eight {
+  border-right: none;
 }
 /* /middle */
-
 /* bottom */
 .main-bottom-top-left  {
   float: left;
@@ -298,7 +332,6 @@ i {
   margin:5px;
   vertical-align: middle;
 }
-
 .companies-logo > img {
   height: 100%;
   width: 100%;
@@ -317,31 +350,61 @@ footer {
   background-color: #2D3E50;
   color: white;
 }
-.footer-top
- {
-  width: 100%
+footer a {
+  color: white;
 }
-.footer-middle{
-  height: 50px;
+footer a:hover {
+  text-decoration: underline;
+  color: #13ABC2;
+}
+/* top */
+.footer-top {
+  width: 100%;
+  padding-top: 25px;
+}
+.footer-top   li {
+  list-style: none;
+  padding: 10px;
+}
+.footer-top li:first-child {
+  font-weight: bold;:
+}
+.column-one , .column-two , .column-three , .column-four {
+  width: 25%;
+  float: left;
+}
+.column-four .button-white {
+  border: none ;
+  color: #425B76;
+}
+.social-media {
+  width: 100%;
+  padding: 10px;
+}
+.social-media-logo {
+  float: left;
+  width: 20%
+}
+/* /top */
+/* middle */
+.footer-middle {
+  margin: 10px 0;
   border-bottom: 1px solid white;
   text-align: center;
 }
-.column-one , .column-two , .column-three , .column-four {
-  height: 100px;
-  width: 25%;
-  float: left;
-  border: 1px solid black;
-}
+/* /middle */
+/* bottom */
 .footer-bottom {
   height: 80px;
   width: 100%;
 }
 .footer-bottom-left {
-  height: 100%;
+  height: 80px;;
   width: 50%;
   float: left;
 }
 #logo-footer {
+  height: 100%;
   width: 100px;
   vertical-align: middle;
 }
@@ -350,4 +413,5 @@ footer {
   float: right;
   text-align: right;
 }
+/* /bottom */
 /* ----------/FOOTER ---------- */
