@@ -262,6 +262,10 @@ i {
   text-align: center;
   padding: 5px;
 }
+.section-three .top , .section-four .top, .section-five .top {
+  border-bottom: 1px solid #425B76;
+  padding-bottom: 15px;
+}
 .section-three ul, .section-four  ul, .section-five ul {
   text-align: left;
   list-style: none;
